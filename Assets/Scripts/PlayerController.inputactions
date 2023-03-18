@@ -1,0 +1,133 @@
+{
+    "name": "PlayerController",
+    "maps": [
+        {
+            "name": "Move",
+            "id": "18436b97-fdc1-434e-8b22-87c48e5582c4",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "5b456f8c-bd27-4127-b971-d758d87be45a",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "TouchScreeen",
+                    "id": "8ccc469b-1c35-4c27-a94e-6f5610cff78d",
+                    "path": "3DVector(mode=1)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "17c58d60-a513-4557-91b3-56f20ec6f5f1",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "Normalize",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "ce859b24-3e9c-4830-9fe5-36a75cfcf2ea",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "Normalize",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "forward",
+                    "id": "acacc24d-33d5-4ef6-b2a8-7c2a8e06ba40",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "Normalize",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "backward",
+                    "id": "5d2b27f9-962a-4ac5-811e-6ad2fc397a70",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "Normalize",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "WASD",
+                    "id": "7b96dd13-0638-4737-9e0a-48b783c18b42",
+                    "path": "3DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "89fd42d4-0592-47b1-b81b-85bb15a7e40a",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "ce656a00-231a-4e31-af8f-a5b27a562d4c",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "forward",
+                    "id": "5f7a0916-a0d6-414b-b951-b1fdf5521e79",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "backward",
+                    "id": "262bfa33-2a3f-426f-a877-afb313a42675",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
