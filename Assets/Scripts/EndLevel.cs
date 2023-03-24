@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class EndLevel : MonoBehaviour
 {
+    [SerializeField] private GameObject gameManager;
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameManager.GetComponent<GameManager>().WinLevel();
     }
 }
