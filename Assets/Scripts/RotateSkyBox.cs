@@ -6,7 +6,7 @@ public class RotateSkyBox : MonoBehaviour
     public Material skyBoxM;
 
     void Update()
-    {
+    {         
         float rotation = skyBoxM.GetFloat("_Rotation");
 
         // Update the Y-axis rotation based on the time
