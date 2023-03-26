@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private GameObject gameManager;
     [SerializeField] private float speed = 150f;
     private Rigidbody rb;
     private bool isForwardBtPressed;
@@ -35,7 +36,10 @@ public class PlayerController : MonoBehaviour
         // apply the movement force to the object
         GetComponent<Rigidbody>().AddForce(movement * speed);
 
-
+        if (transform.position.y <= -30f)
+        {
+            gameManager.GetComponent<GameManager>().GameOver();
+        }
     }
     public void MoveForward()
     {
