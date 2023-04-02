@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private GameObject gameManager;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private float speed = 150f;
     private Rigidbody rb;
     private bool isForwardBtPressed;
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
         if (transform.position.y <= -30f)
         {
-            gameManager.GetComponent<GameManager>().GameOver();
+            gameManager.GameOver();
         }
     }
     public void MoveForward()
@@ -78,6 +78,5 @@ public class PlayerController : MonoBehaviour
     {
         isLeftBtPressed = false; ;
     }
-
 }
 

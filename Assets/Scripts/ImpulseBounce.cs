@@ -6,8 +6,16 @@ public class ImpulseBounce : MonoBehaviour
 {
     public float forceMagnitude = 10.0f;
 
+    private GameManager gameManager;
+
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
+        gameManager.audioSource.PlayOneShot(gameManager.audioClips[2]);
         // Calculate the impulse force direction as the opposite direction of the collision normal
         Vector3 impulseDirection = -collision.GetContact(0).normal;
 

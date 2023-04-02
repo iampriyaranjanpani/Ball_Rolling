@@ -6,19 +6,20 @@ public class Rotator : MonoBehaviour
 {
 	public float speed = 3f;
     private bool isRotating;
+    [SerializeField] private Vector3 rotateAxis;
 
     private void Start()
     {
         isRotating = true;
-        StartCoroutine(YAngleRotation());
+        StartCoroutine(AngleRotation());
     }
 
-    IEnumerator YAngleRotation()
+    IEnumerator AngleRotation()
     {
         while (isRotating)
         {
         yield return new WaitForSeconds(0);
-        transform.Rotate( 0f, 0f, speed * Time.deltaTime / 0.01f, Space.Self);
+        transform.Rotate( rotateAxis *speed * Time.deltaTime / 0.01f, Space.Self);
         }
     }
 
